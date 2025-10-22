@@ -56,11 +56,9 @@ Feedback:
 
 
  
-Test Examples
-
-❌
-![Test 1](Test_1.PNG)
-![Test 2](Test_2.PNG)
-
-✅
-![Test 3](Test_3.PNG)
+# Test Examples
+| Result | Image | 
+| --- | --- |
+| ❌ | ![Test 1](Test_1.PNG) |
+| ❌ | ![Test 2](Test_2.PNG) |
+| ✅ | ![Test 3](Test_3.PNG) |
