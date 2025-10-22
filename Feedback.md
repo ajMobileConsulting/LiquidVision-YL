@@ -58,7 +58,7 @@ Feedback:
  
 # Test Examples
 | Result | Image | 
-| --- | --- |
-| ❌ | ![Test 1](Test_1.PNG) |
-| ❌ | ![Test 2](Test_2.PNG) |
-| ✅ | ![Test 3](Test_3.PNG) |
+| :----: | ----: |
+| ❌ | <picture>  <img src="Test_1.PNG" alt="Flowers" style="width:25%;"> </picture> |
+| ❌ | <picture>  <img src="Test_2.PNG" alt="Flowers" style="width:25%;"> </picture> |
+| ✅ | <picture>  <img src="Test_3.PNG" alt="Flowers" style="width:25%;"> </picture> |
