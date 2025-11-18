@@ -147,16 +147,16 @@ struct ClassificationView: View {
         .padding()
         .frame(maxWidth: .infinity)
         .background(.thinMaterial)
-        .clipShape(RoundedRectangle(cornerRadius: 30))
-        .shadow(color: .white.opacity(0.2), radius: 20, y: 8)
+        .clipShape(RoundedRectangle(cornerRadius: 24))
+        .shadow(color: .white.opacity(0.4), radius: 16, y: 4)
     }
 
     private var pickerActions: some View {
         VStack(spacing: 12) {
             PhotosPicker(selection: $selectedItem, matching: .images) {
-                Label("Choose Photo", systemImage: "photo.fill")
+                Label("Choose", systemImage: "photo.fill")
                     .font(.headline)
-                    .frame(maxWidth: .infinity)
+                    .frame(maxWidth: .infinity, alignment: .leading)
                     .padding()
                     .background(
                         LinearGradient(colors: [.white.opacity(0.25), .white.opacity(0.05)],
@@ -179,7 +179,7 @@ struct ClassificationView: View {
             }
 
             Button(action: onCameraTap) {
-                Label("Capture Photo", systemImage: "camera.fill")
+                Label("Capture", systemImage: "camera.fill")
                     .font(.headline)
                     .frame(maxWidth: .infinity)
                     .padding()

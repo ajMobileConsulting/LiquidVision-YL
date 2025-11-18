@@ -39,7 +39,7 @@ actor MobileNetImageClassifier: ImageClassificationServicing {
 
                 guard let results = request.results as? [VNClassificationObservation],
                       let top = results.first else {
-                    continuation.resume(throwing: ImageClassificationError.noResult)
+                    continuation.resume(throwing: ImageClassificationError.notAvailable)
                     return
                 }
 

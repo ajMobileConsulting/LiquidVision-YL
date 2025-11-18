@@ -14,14 +14,14 @@ struct ClassificationResult: Equatable {
 
 enum ImageClassificationError: LocalizedError {
     case invalidImage
-    case noResult
+    case notAvailable
     case underlying(Error)
 
     var errorDescription: String? {
         switch self {
         case .invalidImage:
             return "Unable to create CIImage."
-        case .noResult:
+        case .notAvailable:
             return "No prediction available."
         case .underlying(let error):
             return error.localizedDescription

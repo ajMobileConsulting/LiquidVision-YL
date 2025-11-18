@@ -11,6 +11,7 @@ import UIKit
 
 @MainActor
 final class ClassificationViewModel: ObservableObject {
+    // TODO: Refactor View Models should not hold UI views we may use business logic to munipulate but not hold its value.
     @Published var selectedImage: UIImage?
     @Published var prediction: String = "Tap below to get started"
     @Published var confidence: Double = 0
